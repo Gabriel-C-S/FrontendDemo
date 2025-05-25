@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style2.css" />
+  <title>Helenão</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar section-content" role="navigation" aria-label="Menu principal">
+      <div class="icon">
+        <img id="menu-toggle" class="icon" src="img/icon.png" alt="Menu Toggle" />
+      </div>
+      <h2 class="logo-text"><a href="index2.html" class="logo-link">Helenão</a></h2>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Funcionalidades</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Tecnologia</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Logar/Cadastrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="sidebar">
+    <div class="perfil">
+      <img src="img/ftdeperfil.png" alt="Foto do usuário" />
+      <p>Usuário</p>
+    </div>
+    <nav class="menu-lateral" role="navigation" aria-label="Menu lateral">
+
+      <a href="#"><span class="emoji">🧠</span> <span class="text">Flashcard</span></a>
+
+      <a href="#"><span class="emoji">📚</span> <span class="text">Matérias</span></a>
+
+      <a href="#"><span class="emoji">📝</span> <span class="text">Simulados</span></a>
+
+      <a href="#"><span class="emoji">💬</span> <span class="text">Heleno</span></a>
+    </nav>
+  </div>
+
+  <main>
+    <div class="page-wrapper">
+      <div class="card-container">
+        <div class="card" style="background-color: #38d3e4;">
+          <h2>Português</h2>
+        </div>
+        <div class="card" style="background-color: #8D3D2F;">
+          <h2>Matemática</h2>
+        </div>
+        <div class="card" style="background-color: #c10404;">
+          <h2>História</h2>
+        </div>
+        <div class="card" style="background-color: #a926b3;">
+          <h2>Geografia</h2>
+        </div>
+        <div class="card" style="background-color: #f5791a;">
+          <h2>Física</h2>
+        </div>
+        <div class="card" style="background-color: #01a3b6;">
+          <h2>Biologia</h2>
+        </div>
+        <div class="card" style="background-color: #00C853;">
+          <h2>Química</h2>
+        </div>
+        <div class="card" style="background-color: #19937f;">
+          <h2>Inglês</h2>
+        </div>
+        <div class="card" style="background-color: #91045d;">
+          <h2>Espanhol</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    toggleButton.addEventListener('click', () => {
+      sidebar.classList.toggle('closed');
+    });
+  </script>
+</body>
+</html>
